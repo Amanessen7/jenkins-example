@@ -1,0 +1,17 @@
+node{
+    stage('first_stage') {
+        node('master'){
+            echo "checkout"
+        }
+    }
+
+    stage('second_stage') {
+        node('master'){
+            echo "Deploying code"
+        }
+    }
+
+    stage('thrid_stage') {
+        echo "thrid tage is done"
+    }
+}
