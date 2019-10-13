@@ -1,5 +1,5 @@
 node{
-    stage('first_stage') {
+    stage('first__stage') {
         node('master'){
             echo "checkout"
         }
