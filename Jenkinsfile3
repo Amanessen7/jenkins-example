@@ -1,0 +1,9 @@
+node ('docker_slave'){
+    stage('first_stage'){
+        echo "checout"
+    }
+
+    stage('stage_two'){
+        echo "deploying to QA"
+    }
+}
